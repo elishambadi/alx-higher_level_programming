@@ -1,0 +1,6 @@
+#!/bin/bash
+echo  "Compiling $PYFILE..."
+python3 -c 'import py_compile'
+python3 -m py_compile $PYFILE
+mv __pycache__/* ./$PYFILE'c'
+
