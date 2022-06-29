@@ -7,4 +7,4 @@ def uppercase(str):
             print("{}".format(chr(str1)), end="")
         else:
             print("{}".format(str[i]), end="")
-    print("") 
+    print("")
