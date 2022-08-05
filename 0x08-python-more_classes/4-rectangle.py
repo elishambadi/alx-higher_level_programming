@@ -61,7 +61,7 @@ class Rectangle:
     def __str__(self):
         if (self.__width != 0) and (self.__height != 0):
             i = 0
-            while i < self.__height:
+            while i < self.__height - 1:
                 # print("i = {}, height = {}".format(i, self.__height))
                 print("#" * self.__width)
                 i += 1
