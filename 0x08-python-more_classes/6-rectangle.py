@@ -1,6 +1,15 @@
 #!/usr/bin/python3
 '''Define a rectangle
-   And related fields
+   Classes:
+      Rectangle
+
+   Functions:
+      area(self)
+      perimeter(self)
+      print(self)
+      str(self)
+      defl(self)
+       
 '''
 
 
