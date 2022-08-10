@@ -27,3 +27,28 @@ Floats are casted to integers before operation is done
 
     >>> add_integer(-2.9, -0.2)
     -2
+
+Function does not work with string types
+
+    >>> add_integer("hello", 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(5, "hello")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+It also does not work with NaN types
+    
+    >>> add_integer(float('NaN'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+Missing arguments also cannot work
+    
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(0,)
+    98
