@@ -8,6 +8,10 @@ def add_integer(a, b=98):
     '''
        Add 2 integers. add_integer(a, b=98)
     '''
+
+    if a is None or b is None:
+        raise SyntaxError("Please enter both numbers")
+
     if type(a) == int or type(a) == float:
         pass
     else:
