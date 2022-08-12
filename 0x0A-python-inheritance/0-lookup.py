@@ -2,9 +2,11 @@
 '''
    Module that has dir method
 '''
+
+
 def lookup(obj):
     '''
-       lookup(object).  Shows methods in an object 
+       lookup(object).  Shows methods in an object
     '''
     methods = []
     for dirs in dir(obj):
