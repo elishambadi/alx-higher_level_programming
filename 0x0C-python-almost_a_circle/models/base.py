@@ -6,6 +6,10 @@
 
 
 class Base:
+    '''
+       Base class model
+    '''
+
     __nb_objects = 0
     id = 1
 
