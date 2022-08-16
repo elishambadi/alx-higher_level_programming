@@ -100,13 +100,13 @@ class Rectangle(Base):
 
     def update(self, *args):
         '''
-	   update(id, width, height, x, y)
-	'''
+           update(id, width, height, x, y)
+        '''
         try:
             self.id = args[0]
             self.width = args[1]
             self.height = args[2]
             self.x = args[3]
             self.y = args[4]
-        except:
+        except BaseException:
             pass
