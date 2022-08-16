@@ -86,7 +86,7 @@ class Rectangle(Base):
 
     def __str__(self):
         '''
-           str(<obj>) or print(<obj>). Returns the object as a string.
+           __str__(). Returns the object as a string.
         '''
         return "[{}] ({}) {}/{} - {}/{}"
         .format(__class__.__name__, self.id, self.__x, self.__y,
