@@ -85,8 +85,12 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def __str__(self):
-        '''Return the object as a string'''
-
-        return "[{}] ({}) {}/{} - {}/{}"
-        .format(__class__.__name__, self.id, self.__x, self.__y,
-                self.__width, self.__height)
+        '''
+           str() print object as string
+        '''
+        return "[{}] ({}) {}/{} - {}/{}".format(__class__.__name__,
+                                                self.id,
+                                                self.__x,
+                                                self.__y,
+                                                self.__width,
+                                                self.__height)
