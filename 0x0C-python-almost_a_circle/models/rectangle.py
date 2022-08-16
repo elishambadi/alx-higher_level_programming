@@ -98,15 +98,28 @@ class Rectangle(Base):
                                                 self.__width,
                                                 self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         '''
            update(id, width, height, x, y)
         '''
-        try:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
-        except BaseException:
-            pass
+        if len(args) > 1 and args[0] != '':
+            try:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            except BaseException:
+                pass
+        else:
+            for key, value in kwargs.items():
+                if key == 'id':
+                    self.id = value
+                if key == 'width':
+                    self.width = value
+                if key == 'height':
+                    self.height = value
+                if key == 'x':
+                    self.x = value
+                if key == 'y':
+                    self.y = value
