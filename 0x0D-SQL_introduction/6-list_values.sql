@@ -1,3 +1,3 @@
 -- List all table rows
 
-DESC first_table
+SELECT * FROM first_table
