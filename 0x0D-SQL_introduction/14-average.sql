@@ -1,5 +1,5 @@
 -- From all records
 -- Get average
 
-SELECT AVERAGE(score) as AVERAGE
+SELECT AVG(score) as AVERAGE
 FROM second_table;
