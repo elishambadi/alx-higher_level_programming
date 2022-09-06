@@ -12,3 +12,10 @@ This project explores basics of SQL and Relational databases.
  - sudo apt install mysql-server
 
 This will get you up and running with SQL.
+
+#### Simple, sample queries
+CREATE DATABASE IF NOT EXIST [db-name]
+DROP DATABASE IF EXIST [db-name]
+SHOW DATABASES
+SHOW TABLES
+SELECT * FROM [table-name]
