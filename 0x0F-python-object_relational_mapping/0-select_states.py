@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+
+
+"""
+    Connects to DB using MySQLdb
+"""
+
 import sqlalchemy
 import MySQLdb
-
-
-"""Connects to a database then executes SELECT query"""
 
 MY_HOST = 'localhost'
 MY_USER = 'root'
