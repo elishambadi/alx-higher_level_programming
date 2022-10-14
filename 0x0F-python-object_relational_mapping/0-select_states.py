@@ -3,9 +3,7 @@ import sqlalchemy
 import MySQLdb
 
 
-'''
-   Connects to a database then executes SELECT query
-'''
+"""Connects to a database then executes SELECT query"""
 
 MY_HOST = 'localhost'
 MY_USER = 'root'
@@ -28,3 +26,6 @@ for row in rows:
             print("'%s'" % col, end="")
         count = count + 1
     print(")")
+
+if __name__ == "__main__":
+    print("Testing...")
