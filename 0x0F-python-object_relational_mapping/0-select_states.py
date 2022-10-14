@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 import sqlalchemy
 import MySQLdb
+
+
+'''
+   Connects to a database then executes SELECT query
+'''
+
 MY_HOST = 'localhost'
 MY_USER = 'root'
 MY_PASS = '##Spidey43##'
