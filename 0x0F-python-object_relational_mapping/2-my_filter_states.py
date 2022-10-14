@@ -20,7 +20,9 @@ if __name__ == "__main__":
                          passwd=MY_PASS,
                          db=MY_DB)
     cur = db.cursor()
-    stmt = "SELECT * FROM states WHERE name LIKE BINARY '{state}' ORDER BY id ASC".format(state = states)
+    stmt = """
+           SELECT * FROM states WHERE name LIKE BINARY '{state}'
+           ORDER BY id ASC""".format(state=states)
     states = cur.execute(stmt)
 
     rows = cur.fetchall()
