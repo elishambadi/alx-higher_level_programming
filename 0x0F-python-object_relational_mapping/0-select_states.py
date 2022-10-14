@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 import sqlalchemy
 import MySQLdb
 MY_HOST = 'localhost'
