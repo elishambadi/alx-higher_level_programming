@@ -20,7 +20,7 @@ if __name__ == "__main__":
                          db=MY_DB)
     cur = db.cursor()
     stmt = """
-           SELECT cities.id, cities.name, states.name FROM cities 
+           SELECT cities.id, cities.name, states.name FROM cities
            INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id
            """
     states = cur.execute(stmt)
