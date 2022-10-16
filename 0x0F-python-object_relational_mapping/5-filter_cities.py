@@ -25,7 +25,7 @@ if __name__ == "__main__":
                          db=MY_DB)
     cur = db.cursor()
     stmt = """
-           SELECT cities.id, cities.name, states.name
+           SELECT cities.name
            FROM cities
            INNER JOIN states
            ON states.id = cities.state_id
@@ -35,19 +35,15 @@ if __name__ == "__main__":
     states = cur.execute(stmt)
 
     rows = cur.fetchall()
+    count = 0
     for row in rows:
-        print("(", end="")
-        count = 0
         for col in row:
-            if count == 2:
-                print("'%s'" % col, end="")
+            if count == 0:
+                print("%s" % col, end="")
             else:
-                if count == 0:
-                    print("%s, " % col, end="")
-                else:
-                    print("'%s', " % col, end="")
-                count = count + 1
-        print(")")
+                print(", %s" % col, end="")
+            count = count + 1
+    print("")
 
     cur.close()
     db.close()
