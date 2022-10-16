@@ -21,6 +21,10 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-
+    count = 0
     for state in session.query(State).order_by(State.id):
-        print("{}: {}".format(state.id, state.name))
+        if count == 0:
+            print("{}: {}".format(state.id, state.name))
+        else:
+            exit(0)
+        count = count + 1
