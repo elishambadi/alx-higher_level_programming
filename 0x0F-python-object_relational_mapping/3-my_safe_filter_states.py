@@ -2,7 +2,7 @@
 
 
 """
-    A script that filters states by user-defined name
+    An SQLi-safe script that filters states by user-defined name
 """
 
 import sqlalchemy
@@ -14,6 +14,10 @@ if __name__ == "__main__":
     MY_PASS = sys.argv[2]
     MY_DB = sys.argv[3]
     states = sys.argv[4]
+    invalid = ";"
+    if invalid in states:
+        print("Invalid input")
+        exit(0)
 
     db = MySQLdb.connect(host='localhost',
                          user=MY_USER,

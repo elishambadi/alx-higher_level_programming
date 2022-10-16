@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS states (
     name VARCHAR(256) NOT NULL,
     PRIMARY KEY (id)
 );
-INSERT INTO states (name) VALUES ("nevada");
+INSERT INTO states (name) VALUES ("nevada"),("Nevada"),("Arizona"),("California"),("Minnesota");
