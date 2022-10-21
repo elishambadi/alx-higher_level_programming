@@ -1,0 +1,11 @@
+HTTP/1.1 301 Moved Permanently
+Location: http://www.google.com/
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 21 Oct 2022 10:33:56 GMT
+Expires: Sun, 20 Nov 2022 10:33:56 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 219
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+
