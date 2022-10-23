@@ -1,3 +1,3 @@
 #!/bin/bash
-# Using cURL to show response size in bytes
-curl -s -o /dev/null -X GET $1 -D file.txt; cat file.txt | grep Allow | sed 's/Allow: //g';
+# Display allowed methods
+curl -i -s -L "$1" -o /dev/null | grep Content-Type | sed "s/Content-Type: //g"
