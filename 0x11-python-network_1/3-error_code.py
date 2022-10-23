@@ -2,8 +2,7 @@
 
 """
    Send request and handle HTTPError error
-   Arguments:
-      1st: URL
+   Arguments: URL only
 """
 
 if __name__ == "__main__":
@@ -14,9 +13,9 @@ if __name__ == "__main__":
     url = sys.argv[1]
     req = urllib.request.Request(url)
     try:
-        response = urllib.request.urlopen(req)
-        html = response.read()
-        html = html.decode("utf-8")
-        print(html)
+        with urllib.request.urlopen(req) as response:
+            html = response.read()
+            html = html.decode("utf-8")
+            print(html)
     except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.code))
