@@ -1,8 +1,0 @@
-HTTP/1.1 301 Moved Permanently
-Location: https://facebook.com/
-Content-Type: text/plain
-Server: proxygen-bolt
-Date: Sun, 23 Oct 2022 07:19:14 GMT
-Connection: keep-alive
-Content-Length: 0
-

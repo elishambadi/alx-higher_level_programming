@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 
 """
    Finds the peak in a list of numbers
@@ -6,6 +6,13 @@
 
 
 def find_peak(list_of_integers):
+    """
+       Finds the peak
+       Arguments:
+          list_of_integer: list of integers
+       Returns:
+          The peak in the list of integers
+    """
     size = len(list_of_integers)
     list = list_of_integers
     i = 1
