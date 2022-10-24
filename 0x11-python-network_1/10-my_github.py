@@ -15,8 +15,8 @@ if __name__ == "__main__":
     pass_ = sys.argv[2]
 
     auth = "Bearer "+pass_
-    payload = {'username':uname}
-    headers = {'Accept':'application/vnd.github+json', 'Authorization': auth}
+    payload = {'username': uname}
+    headers = {'Accept': 'application/vnd.github+json', 'Authorization': auth}
 
     url = "https://api.github.com/users/"+uname
 
