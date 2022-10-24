@@ -25,5 +25,5 @@ if __name__ == "__main__":
     json = res.json()
 
     for i in range(10):
-        print("{}: {}".format(json[i]["sha"], json[i]["commit"]["author"]["name"]))
-
+        print("{}: {}".format(json[i]["sha"],
+                              json[i]["commit"]["author"]["name"]))
