@@ -1,28 +1,15 @@
 #!/usr/bin/python3
-'''
-   List Module
-'''
+"""
+MyList class
+"""
 
 
 class MyList(list):
-    pass
+    """a subclass of list"""
+    def __init__(self):
+        """initializes the object"""
+        super().__init__()
 
-
-'''
-   Print sorted list. print_sorted()
-'''
-
-
-def print_sorted(self):
-    bubblesort(MyList)
-    print(MyList)
-
-
-def bubblesort(list):
-    # Swap the elements to arrange in order
-    for iter_num in range(len(list)-1, 0, -1):
-        for idx in range(iter_num):
-            if list[idx] > list[idx + 1]:
-                temp = list[idx]
-                list[idx] = list[idx + 1]
-                list[idx+1] = temp
+    def print_sorted(self):
+        """prints the sorted list"""
+        print(sorted(self))
